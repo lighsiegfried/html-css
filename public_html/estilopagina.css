@@ -1,0 +1,491 @@
+/* sintaxis.....
+etiqueta{
+            propiedad: valor;
+} 
+*/
+/*para averiguar el tipo de color en codigo html, me apoye en esta pagina http://html-color-codes.info/codigos-de-colores-hexadecimales/ 
+ Al igual para obtener en codigo el tipo de fuente que implemente al programa https://fonts.google.com/ me apoye sobre estas paginas 
+que brindan el codigo y facilitan el desarrollo. para el fondo degradado ingresar a http://www.colorzilla.com/gradient-editor/*/
+
+body audio{
+    height: 32px;
+    margin-left: 35%;
+    box-shadow: 0px 0px 60px #f1f1f1; /*añade dorde de sombra al reproductor de audio*/
+}
+
+div#contenedor{
+    position: relative;
+    width: 100%;
+    border: 1px solid transparent;  
+}
+
+div#contenedor #slider{
+    border-radius: 10px;
+    border: 2px solid #8A0868;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 550px;
+    width: 95%;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+}
+
+div#contenedor #slider div.elemento{
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+div#contenedor #slider  img{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+div#contenedor #slider p.paele{
+    position: absolute;
+    color: #B45F04; /*color*/
+    display: block;
+    font-size: 1.4em; /*AGRANDA LA FUENTE*/
+    font-weight: bolder; /*anchura maxima*/
+    line-height: 25px; /*para que no queden pegadas*/
+    width: 29%; /*espacio delimitado*/
+    right: 1%;
+    top: 5%;
+    text-shadow: 2px 2px 3px white,
+                -2px -2px 3px white;
+}
+
+footer{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 2px;
+    box-shadow: 0px 0px 60px #190B07;
+    /* FONDO DEGRADADO DEL PIE DE LA PAGINA*/
+  /* background: -moz-linear-gradient(left, rgba(33,180,226,0.37) 0%, rgba(33,180,226,0.37) 25%, rgba(33,180,226,0.66) 40%, rgba(33,180,226,0.81) 48%, rgba(33,180,226,0.81) 51%, rgba(183,222,237,0.81) 96%, rgba(183,222,237,0.81) 100%); /* FF3.6-15 */
+  /*  background: -webkit-linear-gradient(left, rgba(33,180,226,0.37) 0%,rgba(33,180,226,0.37) 25%,rgba(33,180,226,0.66) 40%,rgba(33,180,226,0.81) 48%,rgba(33,180,226,0.81) 51%,rgba(183,222,237,0.81) 96%,rgba(183,222,237,0.81) 100%); /* Chrome10-25,Safari5.1-6 */
+  /*  background: linear-gradient(to right, rgba(33,180,226,0.37) 0%,rgba(33,180,226,0.37) 25%,rgba(33,180,226,0.66) 40%,rgba(33,180,226,0.81) 48%,rgba(33,180,226,0.81) 51%,rgba(183,222,237,0.81) 96%,rgba(183,222,237,0.81) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e21b4e2', endColorstr='#cfb7deed',GradientType=1 ); /* IE6-9 */ 
+background: -moz-linear-gradient(top, rgba(169,228,247,0.73) 0%, rgba(140,219,244,0.73) 19%, rgba(32,185,233,1) 89%, rgba(15,180,231,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(169,228,247,0.73) 0%,rgba(140,219,244,0.73) 19%,rgba(32,185,233,1) 89%,rgba(15,180,231,1) 100%); /* Chrome10-25,Safari5.1-6 version de navegador*/
+background: linear-gradient(to bottom, rgba(169,228,247,0.73) 0%,rgba(140,219,244,0.73) 19%,rgba(32,185,233,1) 89%,rgba(15,180,231,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ reproducir el html sin problemas*/
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baa9e4f7', endColorstr='#0fb4e7',GradientType=0 ); /* IE6-9 */
+}
+
+footer span:after{
+    content: " -";  /*ESTO ES UN OBJETO , NO ES PARTE DEL TEXTO DEL HTML*/
+}
+
+footer span:before{ /*RDTO ES UN OBJETO , NO ES PARTE DEL TEXTO DEL HTML*/
+    content: "- ";
+}
+
+body{
+    font-family: 'Yatra One', cursive; /*cambia tipo de fuente*/
+}
+
+header{
+    background-color: #04B4AE; /*colorea fuente*/
+    text-align: right;
+}
+
+header figure img{
+    width: 170px;
+    height: 200px;  /*Personaliza la imagen del gato y la redondea con bordes suaves, brindandole estilo.*/
+    border-radius: 100px;
+    /*margenes de la imagen gato Logotipo*/
+     margin-top: 10px;
+    margin-right: 830px;
+    margin-left: 380px;
+    margin-bottom: 10px;
+}
+
+header nav ul{
+    padding: 0px;  
+    margin: 0px;        /*centra la fuente y no deja que se distorcione*/
+    text-align: center;
+    list-style: none; /*Oculta las diapositivas de la pagina.*/
+}
+
+header nav ul li{
+    height: 35px;
+    margin-top: 10px;       /*configura la pagina para poder verse en resoluciones de 480p hacia arriba (1080p o más), sin dirtorcionarce.*/
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0B4C5F;
+    padding: 15px 25px;
+}
+
+/*Se agregara una imagen de fondo */
+section{
+    background: url(html5.jpg);   
+
+}
+
+section article.html{
+    border-width: 2px;
+    border-style: solid;
+    
+    vertical-align: top;
+    border-radius: 0px 0px 18px 18px; /*suabisa la parte de la caja de abajo*/
+    background-color: orange;/*pinta la cara conde esta el parrafo*/
+    border: 3px solid red;/*pinta un borde suabe de color rojo*/
+    display: inline-block;/*agrupa las cajas si hay mas espacio una de tras de otra para, que queden en linea ingresa "display: block;" quedaran una sobre otra.*/
+    margin: 50px 0px 20px 10%;/*margen del parrafo*/
+    width: 85%;
+    font-size: 1.2em;
+    position: relative; /*padre de posicion de parrafo.*/
+    box-shadow: 0px 0px 50px #B45F04; /*Agrega difuminacion al cuadro de html*/
+}
+
+section article.html h2:hover{ /*ANIMACION AL TEXTO*/
+    font-style: italic;
+    color: #FACC2E;
+    cursor: pointer;
+    text-shadow: 5px 5px 9px black;
+}
+
+  section article.css{
+    border-width: 2px;
+    border-style: solid;
+    
+    vertical-align: top;
+    border-radius: 0px 0px 18px 18px; /*suabisa la parte de la caja de abajo*/
+    background-color: #01A9DB;/*pinta la caja conde esta el parrafo*/
+    border: 3px solid #0489B1;/*pinta un borde suabe de color celeste*/
+    display: inline-block;/*agrupa las cajas si hay mas espacio una de tras de otra para, que queden en linea ingresa "display: block;" quedaran una sobre otra.*/
+    margin: 50px 0px 20px 10%;/*margen del parrafo*/
+    width: 85%;
+    font-size: 1.2em;
+    position: relative; /*padre de posicion de parrafo.*/ 
+    box-shadow: 0px 0px 50px #00BFFF; /*Agrega difuminacion al cuadro de css*/
+    }
+    
+    section article.css h2:hover{ /*ANIMACION AL TEXTO*/
+    font-style: italic;
+    color: #04B4AE;
+    cursor: pointer;
+    text-shadow: 5px 5px 9px black;
+}
+
+  section article.javascript{
+    border-width: 2px;
+    border-style: solid;
+    
+    vertical-align: top;
+    border-radius: 0px 0px 18px 18px; /*suabisa la parte de la caja de abajo*/
+    background-color: #D7DF01;/*pinta la cara conde esta el parrafo*/
+    border: 3px solid #AEB404;/*pinta un borde suabe de color amarillo*/
+    display: inline-block;/*agrupa las cajas si hay mas espacio una de tras de otra para, que queden en linea ingresa "display: block;" quedaran una sobre otra.*/
+    margin: 50px 0px 20px 10%;/*margen del parrafo*/
+    width: 85%;
+    font-size: 1.2em;
+    position: relative; /*padre de posicion de parrafo.*/
+    box-shadow: 0px 0px 50px #F7FE2E;
+    }  
+    
+    section article.javascript h2:hover{ /*ANIMACION AL TEXTO*/
+    font-style: italic;
+    color: #FFFF00;
+    cursor: pointer;
+    text-shadow: 5px 5px 9px black;
+}
+    
+/* configuracion de imagenes*/
+section article.html figure{
+    float: left;
+    margin-top: -65px;
+    margin-left: -50px;
+}
+
+section article.html figure img{
+    border-radius: 35%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #DF7401;
+    width: 200px;
+    height: 200px;
+    transition-duration: 1s; /*da tiempo al zoom de la imagen para no hacer un cambio brusco*/
+    -webkit-transition-duration: 1s; /*PREFIJOS DE CHROME!!!!*/
+}
+
+section article.html figure img:hover{ /*HOVER ES PARA ANIMAR.*/
+    cursor: pointer;
+    transform: scale(1.5);
+    -moz-animation: 2s balanceo 1; /*´PREFIJOS DE MOZILLA*/
+}
+/*animacion que solo se ve en mozilla firefox*/
+@-moz-keyframes balanceo{
+    20%{
+        -moz-transform: scale(0.8) rotate(-8deg);
+    }
+    30%, 70%{
+        -moz-transform: scale(1.3) rotate (14deg); /*animacion exclusiva para mozilla firefox version actualizada con el PREFIJO......................................................*/
+    }
+    50%, 90%{
+        -moz-transform: scale(1.3) rotate (-16deg);
+    }
+}
+
+section article.css figure{
+    float: left;
+    margin-top: -60px;
+    margin-left: -50px;
+}
+
+section article.css figure img{
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0174DF;
+    width: 200px;
+    height: 215px;
+    transition-duration: 1s;
+}
+
+section article.css figure img:hover{ /*HOVER ES PARA ANIMAR.*/
+    cursor: pointer;
+        transform: rotate(-15deg); /*rota la imagen -15 grados*/
+
+}
+
+section article.javascript figure{
+    float: left;
+    margin-top: -60px;
+    margin-left: -50px;
+}
+
+section article.javascript figure img{
+    border-radius: 40%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #F4FA58;
+    width: 200px;
+    height: 215px;
+    transition-duration: 1s;
+}
+
+section article.javascript figure img:hover{
+    cursor: pointer;
+    transform: rotate(15deg); /*rota la imagen 15 grados*/
+}
+
+/*Configuracion de de COLOR*/
+section article.html span.htmltipo{
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    top: -38px;
+    right: -2px;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px 10px;
+    border-radius: 15px 15px 0px 0px;
+    font-weight: bolder;
+    color: #F1F1F1;
+    background: #DF7401;
+}
+
+section article.css span.csstipo{
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    top: -38px;
+    right: -2px;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px 10px;
+    border-radius: 15px 15px 0px 0px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    background: #084B8A;
+}
+
+section article.javascript span.javatipo{
+    position: absolute;
+    border-width: 2px;
+    border-style: solid;
+    top: -38px;
+    right: -2px;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px 10px;
+    border-radius: 15px 15px 0px 0px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    background: #AEB404;
+}
+
+section article.html p{
+    font-size: 0.9em;
+    text-align: justify;
+    margin: 15px 10px 5px 30px;
+    color: #886A08;
+}
+
+section articles.html div{
+    width: 80%;
+    margin: 15px 2% 5px 2%;
+    border-width: 6px;
+    border-style: solid;
+    position: relative;
+    padding-top: 20px;
+    border-radius: 30px;
+}
+
+section article.html div span{
+    margin: 25px 2% 5px 7%;
+    line-height: 26px;
+    border-radius: 15px;
+    text-decoration: underline;
+    background-color: orangered;
+    padding: 6px 25px;
+ 
+}
+
+section article.html div ul{
+list-style: none;
+margin: 0px;
+padding: 0px;
+background-color: orangered;
+border-radius: 70px;
+
+}
+
+section article.html div ul li{
+    font-weight: bolder;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 5px 3%;
+    width: 26%;
+}
+
+
+section article.css p{
+    font-size: 0.9em;
+    text-align: justify;
+    margin: 15px 10px 5px 30px;
+    color: #0B615E;
+}
+
+section articles.css div{
+    width: 80%;
+    margin: 15px 2% 5px 2%;
+    border-width: 6px;
+    border-style: solid;
+    position: relative;
+    padding-top: 20px;
+    border-radius: 30px;
+}
+
+section article.css div span{
+    margin: 25px 2% 5px 7%;
+    line-height: 26px;
+    border-radius: 15px;
+    text-decoration: underline;
+    background-color: #086A87;
+    padding: 6px 25px;
+ 
+}
+
+section article.css div ul{
+list-style: none;
+margin: 0px;
+padding: 0px;
+background-color: #086A87;
+border-radius: 70px;
+
+}
+
+section article.css div ul li{
+    font-weight: bolder;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 5px 3%;
+    width: 26%;
+}
+
+section article.javascript p{
+    font-size: 0.9em;
+    text-align: justify;
+    margin: 15px 10px 5px 30px;
+    color: #5E610B;
+}
+
+section articles.javascript div{
+    width: 80%;
+    margin: 15px 2% 5px 2%;
+    border-width: 6px;
+    border-style: solid;
+    position: relative;
+    padding-top: 20px;
+    border-radius: 30px;
+}
+
+section article.javascript div span{
+    margin: 25px 2% 5px 7%;
+    line-height: 26px;
+    border-radius: 15px;
+    text-decoration: underline;
+    background-color: #868A08;
+    padding: 6px 25px;
+}
+
+section article.javascript div ul{
+list-style: none;
+margin: 0px;
+padding: 0px;
+background-color: #868A08;
+border-radius: 70px;
+}
+
+section article.javascript div ul li{
+    font-weight: bolder;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 5px 3%;
+    width: 26%;
+}
+
+
+
+@media screen and (mid-width: 480px){
+    header nav ul li{   
+        width: 22%;  /*configuracion para poder verse en resoluciones >=480p  */
+    }
+    div#contenedor{
+        display: none;
+    }
+}
+
+@media screen and (mid-width: 767px){
+    header nav ul lia{
+        width: 8%;
+    }
+     div#contenedor{
+        display: inline;
+    }
+    section article.html,
+    section article.css,
+    section article.javascript{
+        width: 40%;              /*margen de la caja html*/
+        margin: 50px 3% 20px 6%;
+    }
+}
+
+@media screen and (mid-width: 950px){
+    section article.html.css.javascript{
+        width: 26%;               /*margen de la caja  html*/
+        margin: 50px 1% 20px 5%;
+    }
+     div#contenedor{
+        display: inline;
+    }
+    }
